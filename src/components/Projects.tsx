@@ -18,7 +18,7 @@ const Projects = () => {
                     gap: '1rem',
                 }}
             >
-                <span style={{ color: 'var(--accent-primary)', fontFamily: 'var(--font-mono)', fontSize: '1.5rem' }}>01.</span>
+                <span style={{ color: 'var(--accent-primary)', fontFamily: 'var(--font-mono)', fontSize: '1.5rem' }}>02.</span>
                 Featured Projects
                 <span style={{ height: '1px', background: 'var(--glass-border)', flex: 1, marginLeft: '1rem' }}></span>
             </h2>

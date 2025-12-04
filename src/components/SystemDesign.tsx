@@ -38,7 +38,7 @@ const SystemDesign = () => {
                     gap: '1rem',
                 }}
             >
-                <span style={{ color: 'var(--accent-primary)', fontFamily: 'var(--font-mono)', fontSize: '1.5rem' }}>02.</span>
+                <span style={{ color: 'var(--accent-primary)', fontFamily: 'var(--font-mono)', fontSize: '1.5rem' }}>03.</span>
                 System Design
                 <span style={{ height: '1px', background: 'var(--glass-border)', flex: 1, marginLeft: '1rem' }}></span>
             </h2>
