@@ -1,0 +1,47 @@
+{
+    "categories": [
+        {
+            "name": "Core & Languages",
+            "icon": "💻",
+            "skills": [
+                "C++",
+                "JavaScript",
+                "Algorithms",
+                "OOP",
+                "CS Fundamentals"
+            ]
+        },
+        {
+            "name": "Backend Engineering",
+            "icon": "⚙️",
+            "skills": [
+                "Node.js",
+                "Express.js",
+                "REST APIs",
+                "System Design"
+            ]
+        },
+        {
+            "name": "Frontend & UI",
+            "icon": "🎨",
+            "skills": [
+                "React.js",
+                "Tailwind CSS",
+                "HTML5/CSS3",
+                "Responsive Design"
+            ]
+        },
+        {
+            "name": "Infrastructure & Tools",
+            "icon": "☁️",
+            "skills": [
+                "AWS (EC2, S3, Lambda)",
+                "Docker",
+                "MongoDB",
+                "MySQL",
+                "Redis",
+                "Git"
+            ]
+        }
+    ]
+}

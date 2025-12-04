@@ -1,0 +1,40 @@
+[
+    {
+        "id": "parking-system",
+        "title": " Parking Management System",
+        "subtitle": "Low-Level Design Implementation",
+        "description": "A clean object-oriented implementation of a parking lot system.",
+        "tech": [
+            "Design Patterns",
+            "OOP",
+            "Low-Level Design"
+        ],
+        "github": "https://github.com/ayush121314/LLD_ParkingLot",
+        "demo": "https://lnkd.in/gXDgEnHY",
+        "overview": "Models real-world parking behavior: entry, slot allocation, ticketing, exit, pricing, payment, and slot release with well-defined boundaries.",
+        "features": [
+            "Vehicle size–based slot allocation",
+            "Multi-floor structure",
+            "Dynamic fee calculation (rain fee, surge fee)",
+            "Payment lifecycle with retries"
+        ],
+        "patterns": [
+            {
+                "name": "Factory",
+                "usage": "Fee calculator creation"
+            },
+            {
+                "name": "Strategy",
+                "usage": "Pricing & payment behavior"
+            },
+            {
+                "name": "Decorator",
+                "usage": "Layered fee rules"
+            },
+            {
+                "name": "Observer",
+                "usage": "Display updates"
+            }
+        ]
+    }
+]

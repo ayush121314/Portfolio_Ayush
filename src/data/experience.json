@@ -1,0 +1,25 @@
+[
+    {
+        "id": "mutaengine",
+        "role": "Software Developer",
+        "company": "Mutaengine",
+        "period": "Oct 2024 – Mar 2025",
+        "highlights": [
+            "Architected a modular MERN stack platform with service-based architecture, ensuring scalability and fault tolerance across deployments",
+            "Built a secure payment and billing system integrated with APIs for real-time transaction tracking and automated invoice generation",
+            "Implemented server-side caching and optimized MongoDB aggregations, enhancing API throughput by 40%"
+        ]
+    },
+    {
+        "id": "anantar",
+        "role": "Software Developer",
+        "company": "Anantar",
+        "period": "May 2024 – Jul 2024",
+        "highlights": [
+            "Developed a secure digital vault platform enabling users to store, manage, and share encrypted notes and documents",
+            "Integrated JWT and OAuth2 authentication for access and secure session handling across user workflows",
+            "Optimized backend API response time by 35% through query indexing and Redis caching strategies",
+            "Deployed scalable microservices architecture on AWS, leveraging S3 for asset storage and CloudWatch for monitoring"
+        ]
+    }
+]

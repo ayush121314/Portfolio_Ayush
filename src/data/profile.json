@@ -1,0 +1,23 @@
+{
+    "name": "Ayush Singh Chauhan",
+    "role": "Software Developer",
+    "tagline": "Architecting scalable solutions with precision and clarity.",
+    "bio": "Software Developer focused on building robust, scalable applications. I specialize in backend systems and clean architecture, bridging the gap between complex requirements and efficient, maintainable code.",
+    "social": {
+        "github": "https://github.com/ayush121314",
+        "linkedin": "https://www.linkedin.com/in/ayush-singh-chauhan-6a65a4249/",
+        "email": "ayush.18.sc@gmail.com",
+        "resume": "https://drive.google.com/file/d/1SkeFZF7143RKtHqM9uuDqeRxmIVTFk6W/view?usp=sharing"
+    },
+    "education": {
+        "institution": "The LNM Institute of Information Technology",
+        "degree": "B.Tech - Computer Science and Engineering",
+        "period": "2022–2026"
+    },
+    "achievements": [
+        "Global rank 546 in Leetcode Biweekly Contest 170",
+        "Solved 300+ problems on LeetCode and GFG",
+        "97.7 percentile in JEE Mains 2022",
+        "Led PR & partnership efforts for Jaipur's largest tech fest, driving 3× audience growth"
+    ]
+}

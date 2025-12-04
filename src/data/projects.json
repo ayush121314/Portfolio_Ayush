@@ -1,0 +1,40 @@
+[
+    {
+        "id": "talkhub",
+        "title": "LNMIIT TalkHub System",
+        "description": "A mentorship platform connecting students with professionals to enhance engagement and learning.",
+        "tech": [
+            "React",
+            "Node.js",
+            "Express",
+            "MongoDB"
+        ],
+        "year": "2025",
+        "github": "https://github.com/ayush121314/TalkHub",
+        "demo": "https://talkhub-three.vercel.app/",
+        "highlights": [
+            "Built a mentorship platform connecting students with professionals",
+            "Implemented password reset flows and admin panel",
+            "Developed real-time discussion forums and session registration"
+        ]
+    },
+    {
+        "id": "outpass",
+        "title": "LNMIIT OutPass System",
+        "description": "Digital campus exit platform reducing administrative processing time by 90%.",
+        "tech": [
+            "React",
+            "Express",
+            "MongoDB",
+            "Node.js"
+        ],
+        "year": "2024",
+        "github": "https://github.com/ayush121314/Outpass",
+        "demo": "https://outpass-zeta.vercel.app/",
+        "highlights": [
+            "Delivered a fully digital campus exit platform",
+            "Secured student data using JWT + OTP-based authentication",
+            "Designed REST APIs for exit requests and Pdf generation of exit requests"
+        ]
+    }
+]
