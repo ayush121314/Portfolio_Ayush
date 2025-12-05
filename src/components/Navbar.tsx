@@ -67,7 +67,7 @@ const Navbar = () => {
                 }}
             >
                 <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--accent-primary)', zIndex: 1001 }}>
-                    Portfolio
+                    Developer
                 </div>
 
                 {/* Desktop Menu */}
@@ -102,44 +102,53 @@ const Navbar = () => {
                     </li>
                 </ul>
 
-                {/* Mobile Menu Button */}
-                <button
-                    onClick={() => setIsOpen(!isOpen)}
+                {/* Mobile Controls - Theme Toggle + Menu Button */}
+                <div
                     style={{
                         display: 'none',
-                        flexDirection: 'column',
-                        gap: '4px',
-                        background: 'transparent',
-                        border: 'none',
-                        cursor: 'pointer',
+                        gap: '1rem',
+                        alignItems: 'center',
                         zIndex: 1001,
-                        padding: '5px',
                     }}
                     className="mobile-toggle"
-                    aria-label="Toggle menu"
                 >
-                    <span style={{
-                        width: '24px',
-                        height: '2px',
-                        background: isOpen ? 'var(--accent-primary)' : 'var(--text-primary)',
-                        transform: isOpen ? 'rotate(45deg) translateY(6px)' : 'none',
-                        transition: 'all 0.3s ease',
-                    }}></span>
-                    <span style={{
-                        width: '24px',
-                        height: '2px',
-                        background: 'var(--text-primary)',
-                        opacity: isOpen ? 0 : 1,
-                        transition: 'all 0.3s ease',
-                    }}></span>
-                    <span style={{
-                        width: '24px',
-                        height: '2px',
-                        background: isOpen ? 'var(--accent-primary)' : 'var(--text-primary)',
-                        transform: isOpen ? 'rotate(-45deg) translateY(-6px)' : 'none',
-                        transition: 'all 0.3s ease',
-                    }}></span>
-                </button>
+                    <ThemeToggle />
+                    <button
+                        onClick={() => setIsOpen(!isOpen)}
+                        style={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            gap: '4px',
+                            background: 'transparent',
+                            border: 'none',
+                            cursor: 'pointer',
+                            padding: '5px',
+                        }}
+                        aria-label="Toggle menu"
+                    >
+                        <span style={{
+                            width: '24px',
+                            height: '2px',
+                            background: isOpen ? 'var(--accent-primary)' : 'var(--text-primary)',
+                            transform: isOpen ? 'rotate(45deg) translateY(6px)' : 'none',
+                            transition: 'all 0.3s ease',
+                        }}></span>
+                        <span style={{
+                            width: '24px',
+                            height: '2px',
+                            background: 'var(--text-primary)',
+                            opacity: isOpen ? 0 : 1,
+                            transition: 'all 0.3s ease',
+                        }}></span>
+                        <span style={{
+                            width: '24px',
+                            height: '2px',
+                            background: isOpen ? 'var(--accent-primary)' : 'var(--text-primary)',
+                            transform: isOpen ? 'rotate(-45deg) translateY(-6px)' : 'none',
+                            transition: 'all 0.3s ease',
+                        }}></span>
+                    </button>
+                </div>
 
                 {/* Mobile Menu Overlay */}
                 <div
@@ -180,15 +189,6 @@ const Navbar = () => {
                             {link.name}
                         </a>
                     ))}
-
-                    <div style={{
-                        marginTop: '2rem',
-                        display: 'flex',
-                        justifyContent: 'flex-end',
-                        paddingRight: '0.5rem'
-                    }}>
-                        <ThemeToggle />
-                    </div>
                 </div>
 
                 {/* Overlay backdrop when menu is open */}
