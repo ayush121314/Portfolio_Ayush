@@ -62,7 +62,7 @@ const Hero = () => {
                     alignItems: 'center',
                     padding: '6rem 5% 2rem 5%',
                     position: 'relative',
-                    overflow: 'visible',
+                    overflow: 'hidden',
                 }}
             >
                 {/* Background Glow */}
