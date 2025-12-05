@@ -1,3 +1,4 @@
+import { ThemeProvider } from './context/ThemeContext';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
@@ -10,19 +11,21 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="app">
-      <Navbar />
-      <main>
-        <Hero />
-        <Experience />
-        <Projects />
-        <SystemDesign />
-        <Skills />
-        <About />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <ThemeProvider>
+      <div className="app">
+        <Navbar />
+        <main>
+          <Hero />
+          <Experience />
+          <Projects />
+          <SystemDesign />
+          <Skills />
+          <About />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </ThemeProvider>
   )
 }
 

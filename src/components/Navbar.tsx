@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import ThemeToggle from './ThemeToggle';
 import '../styles/global.css';
 
 const Navbar = () => {
@@ -57,9 +58,9 @@ const Navbar = () => {
                     zIndex: 1000,
                     padding: '1rem 5%',
                     transition: 'var(--transition-medium)',
-                    background: scrolled ? 'rgba(10, 10, 10, 0.9)' : 'rgba(10, 10, 10, 0.8)',
+                    background: scrolled ? 'var(--navbar-bg)' : 'var(--navbar-bg-transparent)',
                     backdropFilter: 'blur(10px)',
-                    borderBottom: scrolled ? '1px solid var(--glass-border)' : '1px solid rgba(255, 255, 255, 0.05)',
+                    borderBottom: scrolled ? '1px solid var(--glass-border)' : '1px solid var(--glass-border)',
                     display: 'flex',
                     justifyContent: 'space-between',
                     alignItems: 'center',
@@ -96,6 +97,9 @@ const Navbar = () => {
                             </a>
                         </li>
                     ))}
+                    <li>
+                        <ThemeToggle />
+                    </li>
                 </ul>
 
                 {/* Mobile Menu Button */}
@@ -146,7 +150,7 @@ const Navbar = () => {
                         width: '70%',
                         maxWidth: '300px',
                         height: '100vh',
-                        background: 'rgba(10, 10, 10, 0.98)',
+                        background: 'var(--navbar-bg)',
                         backdropFilter: 'blur(10px)',
                         transform: isOpen ? 'translateX(0)' : 'translateX(100%)',
                         transition: 'transform 0.3s ease',
@@ -176,6 +180,15 @@ const Navbar = () => {
                             {link.name}
                         </a>
                     ))}
+
+                    <div style={{
+                        marginTop: '2rem',
+                        display: 'flex',
+                        justifyContent: 'flex-end',
+                        paddingRight: '0.5rem'
+                    }}>
+                        <ThemeToggle />
+                    </div>
                 </div>
 
                 {/* Overlay backdrop when menu is open */}

@@ -64,7 +64,7 @@ const Hero = () => {
                     fontWeight: 800,
                     lineHeight: 1.1,
                     marginBottom: '1rem',
-                    background: 'linear-gradient(to right, #fff, #a0a0a0)',
+                    background: 'var(--gradient-hero-name)',
                     WebkitBackgroundClip: 'text',
                     WebkitTextFillColor: 'transparent',
                 }}

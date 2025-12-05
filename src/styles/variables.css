@@ -1,19 +1,5 @@
+/* Base Variables (Independent of theme) */
 :root {
-  /* Colors */
-  --bg-color: #0a0a0a;
-  --bg-secondary: #111111;
-  --text-primary: #ffffff;
-  --text-secondary: #a0a0a0;
-  --accent-primary: #00f3ff; /* Neon Cyan */
-  --accent-secondary: #bc13fe; /* Neon Purple */
-  --accent-tertiary: #4d4dff; /* Neon Blue */
-
-  /* Glassmorphism */
-  --glass-bg: rgba(255, 255, 255, 0.05);
-  --glass-border: rgba(255, 255, 255, 0.1);
-  --glass-blur: 10px;
-  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-
   /* Spacing */
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
@@ -28,4 +14,64 @@
   /* Transitions */
   --transition-fast: 0.2s ease;
   --transition-medium: 0.4s ease;
+  --transition-theme: 0.3s ease;
+}
+
+/* Dark Theme (Default) */
+:root,
+[data-theme="dark"] {
+  /* Colors */
+  --bg-color: #0a0a0a;
+  --bg-secondary: #111111;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --accent-primary: #00f3ff;
+  /* Neon Cyan */
+  --accent-secondary: #bc13fe;
+  /* Neon Purple */
+  --accent-tertiary: #4d4dff;
+  /* Neon Blue */
+
+  /* Gradients */
+  --gradient-hero-name: linear-gradient(to right, #ffffff, #a0a0a0);
+
+  /* Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-blur: 10px;
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+  /* Navbar specific */
+  --navbar-bg: rgba(10, 10, 10, 0.9);
+  --navbar-bg-transparent: rgba(10, 10, 10, 0.8);
+}
+
+/* Light Theme */
+[data-theme="light"] {
+  /* Colors */
+  --bg-color: #fafafa;
+  --bg-secondary: #f5f5f5;
+  --text-primary: #000000;
+  /* Pure black for maximum contrast */
+  --text-secondary: #2a2a2a;
+  /* Much darker for better readability */
+  --accent-primary: #0097a7;
+  /* Slightly darker cyan for better contrast */
+  --accent-secondary: #6200ea;
+  /* Darker purple for better visibility */
+  --accent-tertiary: #304ffe;
+  /* Darker blue */
+
+  /* Gradients */
+  --gradient-hero-name: linear-gradient(to right, #000000, #2a2a2a);
+
+  /* Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(0, 0, 0, 0.15);
+  --glass-blur: 10px;
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+
+  /* Navbar specific */
+  --navbar-bg: rgba(255, 255, 255, 0.95);
+  --navbar-bg-transparent: rgba(255, 255, 255, 0.85);
 }
