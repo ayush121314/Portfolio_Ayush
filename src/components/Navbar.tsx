@@ -38,6 +38,12 @@ const Navbar = () => {
                     .mobile-toggle {
                         display: flex !important;
                     }
+                    .navbar-logo {
+                        font-size: 1.2rem !important;
+                    }
+                    nav {
+                        padding: 1rem 3% !important;
+                    }
                 }
                 @media (min-width: 769px) {
                     .desktop-menu {
@@ -66,7 +72,7 @@ const Navbar = () => {
                     alignItems: 'center',
                 }}
             >
-                <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--accent-primary)', zIndex: 1001 }}>
+                <div className="navbar-logo" style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--accent-primary)', zIndex: 1001 }}>
                     Developer
                 </div>
 

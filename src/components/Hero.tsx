@@ -28,7 +28,10 @@ const Hero = () => {
                         order: 1;
                         text-align: center;
                     }
-                    .hero-content h3,
+                    .hero-content h3 {
+                        font-size: 1rem !important;
+                        margin-bottom: 0.5rem !important;
+                    }
                     .hero-content h1,
                     .hero-content h2,
                     .hero-content p {
@@ -57,9 +60,9 @@ const Hero = () => {
                     flexDirection: 'column',
                     justifyContent: 'center',
                     alignItems: 'center',
-                    padding: '2rem 5%',
+                    padding: '6rem 5% 2rem 5%',
                     position: 'relative',
-                    overflow: 'hidden',
+                    overflow: 'visible',
                 }}
             >
                 {/* Background Glow */}
