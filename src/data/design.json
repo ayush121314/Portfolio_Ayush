@@ -1,9 +1,9 @@
 [
   {
     "id": "atm-system",
-    "title": "🏧 ATM System — Low Level Design (LLD)",
-    "subtitle": "Production-Grade ATM Architecture for LLD & Interviews",
-    "description": "Design-focused, production-style ATM machine system modelling complete transaction lifecycle with safe orchestration and hardware abstraction.",
+    "title": "🏧 ATM System",
+    "subtitle": "Low-Level Design Implementation",
+    "description": "A production-style low-level design of an ATM system focused on safe transaction execution and clean abstraction.",
     "tech": [
       "Design Patterns",
       "OOP",
@@ -11,26 +11,37 @@
     ],
     "github": "https://github.com/ayush121314/LLD_Designs/tree/main/ATM",
     "demo": "https://lnkd.in/gcXv6Vdx",
-    "overview": "Models the full lifecycle of ATM transactions: card & PIN validation, transaction routing, chain-based handler execution, bank integration, cash planning and dispensing, receipt generation, logging, and rollback-safe completion — all with clear separation of orchestration and business logic.",
+    "overview": "Models core ATM behavior: authentication, transaction routing, balance updates, cash planning, receipt generation, and rollback control.",
     "features": [
-      "End-to-end ATM transaction lifecycle (Withdraw, Deposit, Balance Enquiry)",
-      "Strategy-based transaction orchestration",
-      "Chain of Responsibility for validations and updates",
-      "Transaction-safe processing with rollback handling",
-      "Denomination-based cash planning and dispensing",
-      "Hardware abstraction via façade layer",
-      "Context-driven execution with a single AtmContext object",
-      "Extensible design for new transaction types and rules"
+      "Transaction routing via Strategy",
+      "Handler pipelines using Chain of Responsibility",
+      "Safe commit and rollback handling",
+      "Context-driven execution",
+      "Denomination-based cash planning",
+      "Hardware abstraction layer",
+      "Receipt generation workflow"
     ],
     "patterns": [
-      { "name": "Strategy", "usage": "Switching between Withdraw, Deposit and Balance Enquiry flows" },
-      { "name": "Chain of Responsibility", "usage": "Handler chains for validation, updates and receipts" },
-      { "name": "Factory", "usage": "Transaction strategy and handler chain creation" },
-      { "name": "Facade", "usage": "Hardware abstraction via AtmHardwareRepo" },
-      { "name": "Repository", "usage": "Persistence layer for banking and journaling" },
-      { "name": "Singleton", "usage": "Central HandleManager as transaction orchestrator" },
-      { "name": "Unit of Work", "usage": "Commit and rollback control" },
-      { "name": "Context Object", "usage": "State management via AtmContext" }
+      {
+        "name": "Strategy",
+        "usage": "Transaction type selection"
+      },
+      {
+        "name": "Chain of Responsibility",
+        "usage": "Processing pipeline"
+      },
+      {
+        "name": "Factory",
+        "usage": "Transaction & handler creation"
+      },
+      {
+        "name": "Facade",
+        "usage": "Hardware integration"
+      },
+      {
+        "name": "Repository",
+        "usage": "Banking & logging persistence"
+      }
     ],
     "diagrams": {
       "withdrawSequence": "https://lnkd.in/g_qaVHEr",
@@ -58,10 +69,22 @@
       "Payment lifecycle with retries"
     ],
     "patterns": [
-      { "name": "Factory", "usage": "Fee calculator creation" },
-      { "name": "Strategy", "usage": "Pricing and payment behavior" },
-      { "name": "Decorator", "usage": "Layered fee rules" },
-      { "name": "Observer", "usage": "Display updates" }
+      {
+        "name": "Factory",
+        "usage": "Fee calculator creation"
+      },
+      {
+        "name": "Strategy",
+        "usage": "Pricing and payment behavior"
+      },
+      {
+        "name": "Decorator",
+        "usage": "Layered fee rules"
+      },
+      {
+        "name": "Observer",
+        "usage": "Display updates"
+      }
     ],
     "diagrams": {
       "parkingSequence": "https://lnkd.in/dz4a3fh4",
