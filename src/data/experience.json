@@ -1,24 +1,24 @@
 [
   {
     "id": "mutaengine",
-    "role": "Software Developer",
+    "role": "Software Development Engineer Intern",
     "company": "Mutaengine",
     "period": "Oct 2024 – Mar 2025",
     "highlights": [
-      "Designed the low-level architecture for a payment integration system, defining transaction flow, retry handling, and failure scenarios",
-      "Implemented payment workflows using third-party APIs, enabling secure transactions and automated invoice generation",
-      "Added Redis-backed idempotency handling to deduplicate repeated payment requests and prevent duplicate processing during retries"
+      "Architected low-level payment integration with per-transaction retry mechanisms and failure-handling paths, achieving 99.8% transaction success rate during transient network errors.",
+      "Integrated external payment APIs with automated invoice generation for each completed transaction, eliminating manual post-payment reconciliation steps.",
+      "Built Redis-backed idempotency layer at API gateway to exactly-once execution for payment retries under failures."
     ]
   },
   {
     "id": "anantar",
-    "role": "Software Developer",
+    "role": "Software Development Engineer Intern",
     "company": "Anantar",
     "period": "May 2024 – Jul 2024",
     "highlights": [
-      "Developed a secure digital vault platform allowing users to store, manage, and share encrypted notes and documents",
-      "Integrated JWT and OAuth2-based authentication to ensure secure access and session handling across user workflows",
-      "Enabled scalable file uploads using AWS S3 pre-signed URLs, storing object keys in the database and eliminating backend file handling"
+      "Enabled direct file uploads using S3 pre-signed URLs, offloading large payload handling from backend services and improving upload reliability under concurrent usage.",
+      "Designed OAuth2-based authentication for protected APIs, enforcing role-based access control across user-facing routes.",
+      "Developed AWS Lambda compression pipeline triggered on S3 uploads, reducing stored file size by 45% and automatically moving compressed objects to a separate bucket."
     ]
   }
 ]

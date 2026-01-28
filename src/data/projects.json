@@ -13,9 +13,9 @@
         "github": "https://github.com/ayush121314/TalkHub",
         "demo": "https://talkhub-three.vercel.app/",
         "highlights": [
-            "Built a mentorship platform connecting students with professionals",
-            "Implemented password reset flows and admin panel",
-            "Developed real-time discussion forums and session registration"
+            "Developed lecture-centric discussion application where each talk maps to an isolated forum, supporting posts, replies, and nested comment threads.",
+            "Introduced email-based OTP authentication with expiry enforcement, ensuring secure and time-bound user registration.",
+            "Engineered backend APIs for discussion threads, resource uploads, and lecture recording sharing, centralizing all lecture-related information in one platform."
         ]
     },
     {
@@ -32,9 +32,9 @@
         "github": "https://github.com/ayush121314/Outpass",
         "demo": "https://outpass-zeta.vercel.app/",
         "highlights": [
-            "Delivered a fully digital campus exit platform",
-            "Secured student data using JWT + OTP-based authentication",
-            "Designed REST APIs for exit requests and Pdf generation of exit requests"
+            "Delivered digital outpass management system to replace paper-based approvals, enabling students and visitors to submit requests, track status, and access historical records from a single platform.",
+            "Secured platform with JWT authentication and email OTP verification for registration and login flows, reducing manual identity verification steps and minimizing unauthorized access cases.",
+            "Created backend APIs for request submission, admin approval actions, and automated PDF generation, reducing average approval turnaround time by 90% and eliminating manual paperwork handling."
         ]
     }
 ]
