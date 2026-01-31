@@ -1,5 +1,50 @@
 [
   {
+  "id": "rate-limiter",
+  "title": " Rate Limiter Service",
+  "subtitle": "Production-Style Backend System",
+  "description": "A microservice-ready rate limiter implemented in C++, designed for real backend usage with clean abstractions and fast request handling.",
+  "tech": [
+    "C++",
+    "System Design",
+    "Low-Level Design",
+    "Microservices"
+  ],
+  "github": "https://lnkd.in/gsTE4k2t",
+  "demo": "https://lnkd.in/gex9HxpB",
+  "overview": "Implements a configurable rate limiting service that can sit in front of APIs or services to control traffic based on user tiers and policies.",
+  "features": [
+    "Manager-based facade for plug-and-play integration",
+    "Config-driven rate limiting with startup-time loading",
+    "Lazy creation and reuse of limiter instances",
+    "Fast in-memory request path (no parsing or IO at runtime)",
+    "Support for multiple strategies: Fixed Window, Sliding Window, Token Bucket, Leaky Bucket",
+    "Clear separation of config, policy, factory, service, and algorithm layers"
+  ],
+  "patterns": [
+    {
+      "name": "Facade",
+      "usage": "Single entry point for consuming services"
+    },
+    {
+      "name": "Factory",
+      "usage": "Rate limiter creation based on policy"
+    },
+    {
+      "name": "Strategy",
+      "usage": "Multiple rate limiting algorithms"
+    },
+    {
+      "name": "Singleton-style usage",
+      "usage": "Single manager instance reused across requests"
+    }
+  ],
+  "diagrams": {
+    "systemDesign": "https://lnkd.in/gex9HxpB",
+    "sequenceDiagram": "https://lnkd.in/ghkgbSiJ"
+  }
+},
+  {
     "id": "atm-system",
     "title": "🏧 ATM System",
     "subtitle": "Low-Level Design Implementation",
