@@ -12,7 +12,7 @@
   ],
   "github": "https://lnkd.in/gsTE4k2t",
   "demo": "https://lnkd.in/gex9HxpB",
-  "overview": "Implements a configurable rate limiting service that can sit in front of APIs or services to control traffic based on user tiers and policies.",
+  "overview": "Implemented a configurable rate limiting service that can sit in front of APIs or services to control traffic based on user tiers and policies.",
   "features": [
     "Manager-based facade for plug-and-play integration",
     "Config-driven rate limiting with startup-time loading",
