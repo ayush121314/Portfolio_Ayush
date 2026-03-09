@@ -97,7 +97,6 @@
     "subtitle": "Backend Architecture Inspired by Jira",
     "description": "A scalable backend system for task lifecycle management with event-driven notifications, state-based workflows, and clean layered architecture.",
     "tech": [
-      "Java",
       "System Design",
       "Low-Level Design",
       "Backend Architecture"
