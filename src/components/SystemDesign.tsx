@@ -21,6 +21,7 @@ interface DesignProject {
 }
 
 const SystemDesign = () => {
+    const [showAll, setShowAll] = useState(false);
     const designs = designData as unknown as DesignProject[];
     const [selectedDesign, setSelectedDesign] = useState<DesignProject | null>(null);
 
@@ -69,7 +70,7 @@ const SystemDesign = () => {
                 maxWidth: '1200px',
                 margin: '0 auto'
             }}>
-                {designs.map((design) => (
+                {(showAll ? designs : designs.slice(0, 3)).map((design) => (
                     <div
                         key={design.id}
                         onClick={() => setSelectedDesign(design)}
@@ -140,7 +141,27 @@ const SystemDesign = () => {
                     </div>
                 ))}
             </div>
-
+            {/* Show More / Show Less Button */}
+            <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+                <button
+                    onClick={() => setShowAll(!showAll)}
+                    style={{
+                        background: 'var(--accent-primary)',
+                        color: 'var(--bg-color)',
+                        border: 'none',
+                        padding: '0.8rem 1.5rem',
+                        borderRadius: '8px',
+                        cursor: 'pointer',
+                        fontSize: '1rem',
+                        fontWeight: 600,
+                        transition: 'background 0.2s',
+                    }}
+                    onMouseEnter={e => e.currentTarget.style.background = 'var(--accent-secondary)'}
+                    onMouseLeave={e => e.currentTarget.style.background = 'var(--accent-primary)'}
+                >
+                    {showAll ? 'Show Less' : 'Show More'}
+                </button>
+            </div>
             {/* MODAL OVERLAY */}
             {selectedDesign && (
                 <div style={{

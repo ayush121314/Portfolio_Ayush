@@ -1,49 +1,142 @@
 [
   {
-  "id": "rate-limiter",
-  "title": " Rate Limiter Service",
-  "subtitle": "Production-Style Backend System",
-  "description": "A microservice-ready rate limiter implemented in C++, designed for real backend usage with clean abstractions and fast request handling.",
-  "tech": [
-    "C++",
-    "System Design",
-    "Low-Level Design",
-    "Microservices"
-  ],
-  "github": "https://lnkd.in/gsTE4k2t",
-  "demo": "https://lnkd.in/gex9HxpB",
-  "overview": "Implemented a configurable rate limiting service that can sit in front of APIs or services to control traffic based on user tiers and policies.",
-  "features": [
-    "Manager-based facade for plug-and-play integration",
-    "Config-driven rate limiting with startup-time loading",
-    "Lazy creation and reuse of limiter instances",
-    "Fast in-memory request path (no parsing or IO at runtime)",
-    "Support for multiple strategies: Fixed Window, Sliding Window, Token Bucket, Leaky Bucket",
-    "Clear separation of config, policy, factory, service, and algorithm layers"
-  ],
-  "patterns": [
-    {
-      "name": "Facade",
-      "usage": "Single entry point for consuming services"
-    },
-    {
-      "name": "Factory",
-      "usage": "Rate limiter creation based on policy"
-    },
-    {
-      "name": "Strategy",
-      "usage": "Multiple rate limiting algorithms"
-    },
-    {
-      "name": "Singleton-style usage",
-      "usage": "Single manager instance reused across requests"
+    "id": "rate-limiter",
+    "title": "Rate Limiter Service",
+    "subtitle": "Production-Style Backend System",
+    "description": "A microservice-ready rate limiter implemented in C++, designed for real backend usage with clean abstractions and fast request handling.",
+    "tech": [
+      "C++",
+      "System Design",
+      "Low-Level Design",
+      "Microservices"
+    ],
+    "github": "https://lnkd.in/gsTE4k2t",
+    "demo": "https://lnkd.in/gex9HxpB",
+    "overview": "Implemented a configurable rate limiting service that can sit in front of APIs or services to control traffic based on user tiers and policies.",
+    "features": [
+      "Manager-based facade for plug-and-play integration",
+      "Config-driven rate limiting with startup-time loading",
+      "Lazy creation and reuse of limiter instances",
+      "Fast in-memory request path (no parsing or IO at runtime)",
+      "Support for multiple strategies: Fixed Window, Sliding Window, Token Bucket, Leaky Bucket",
+      "Clear separation of config, policy, factory, service, and algorithm layers"
+    ],
+    "patterns": [
+      {
+        "name": "Facade",
+        "usage": "Single entry point for consuming services"
+      },
+      {
+        "name": "Factory",
+        "usage": "Rate limiter creation based on policy"
+      },
+      {
+        "name": "Strategy",
+        "usage": "Multiple rate limiting algorithms"
+      },
+      {
+        "name": "Singleton-style usage",
+        "usage": "Single manager instance reused across requests"
+      }
+    ],
+    "diagrams": {
+      "systemDesign": "https://lnkd.in/gex9HxpB",
+      "sequenceDiagram": "https://lnkd.in/ghkgbSiJ"
     }
-  ],
-  "diagrams": {
-    "systemDesign": "https://lnkd.in/gex9HxpB",
-    "sequenceDiagram": "https://lnkd.in/ghkgbSiJ"
-  }
-},
+  },
+  {
+    "id": "url-shortener",
+    "title": "Scalable URL Shortener",
+    "subtitle": "Distributed System Design",
+    "description": "A production-style distributed URL shortener designed for high read traffic, horizontal scalability, and low-latency redirects.",
+    "tech": [
+      "System Design",
+      "Distributed Systems",
+      "Caching",
+      "Redis",
+      "Database Replication"
+    ],
+    "github": "https://lnkd.in/g_Wsnem4",
+    "demo": "https://lnkd.in/gphACfug",
+    "overview": "Designed a horizontally scalable URL shortener similar to Bitly using read/write service separation, distributed ID generation, and cache-first redirect handling.",
+    "features": [
+      "Separated Read and Write services to handle heavy redirect traffic",
+      "Snowflake-based distributed ID generation for unique short URLs",
+      "ZooKeeper workerId assignment for distributed safety",
+      "Cache-aside pattern with Redis to reduce database load",
+      "Database primary-replica architecture for scalable reads",
+      "Support for custom alias URLs with subscription validation",
+      "Low latency redirect path optimized for cache hits"
+    ],
+    "patterns": [
+      {
+        "name": "Service Layered Architecture",
+        "usage": "Controller → Service → Repository separation"
+      },
+      {
+        "name": "Cache Aside Pattern",
+        "usage": "Efficient caching strategy for redirect lookups"
+      },
+      {
+        "name": "Distributed ID Generation",
+        "usage": "Snowflake algorithm for scalable unique ID generation"
+      },
+      {
+        "name": "Microservice Separation",
+        "usage": "Independent Read and Write services"
+      }
+    ],
+    "diagrams": {
+      "systemDesign": "https://lnkd.in/gphACfug",
+      "sequenceDiagram": "https://lnkd.in/gKRDpR5Y"
+    }
+  },
+  {
+    "id": "task-management-system",
+    "title": "Task Management System",
+    "subtitle": "Backend Architecture Inspired by Jira",
+    "description": "A scalable backend system for task lifecycle management with event-driven notifications, state-based workflows, and clean layered architecture.",
+    "tech": [
+      "Java",
+      "System Design",
+      "Low-Level Design",
+      "Backend Architecture"
+    ],
+    "github": "https://lnkd.in/gG9PbUwZ",
+    "demo": "https://lnkd.in/gn5A72-8",
+    "overview": "Designed a modular task management backend inspired by Jira and GitHub Issues supporting task lifecycle management, comments, assignments, and event-driven notifications.",
+    "features": [
+      "Layered architecture with Controller, Service, and Repository separation",
+      "State Pattern implementation for task lifecycle management",
+      "Event-driven system for domain event publishing",
+      "Observer-based notification architecture",
+      "Activity history logging for all task changes",
+      "Multi-user task assignment support",
+      "Comment system with permission validation"
+    ],
+    "patterns": [
+      {
+        "name": "State",
+        "usage": "Task lifecycle management"
+      },
+      {
+        "name": "Observer",
+        "usage": "Event-driven notification system"
+      },
+      {
+        "name": "Factory",
+        "usage": "Task state creation"
+      },
+      {
+        "name": "Layered Architecture",
+        "usage": "Controller, Service, Repository separation"
+      }
+    ],
+    "diagrams": {
+      "systemDesign": "https://lnkd.in/gn5A72-8",
+      "sequenceDiagram": "https://lnkd.in/gc5Bh-uy"
+    }
+  },
   {
     "id": "atm-system",
     "title": "🏧 ATM System",
@@ -96,7 +189,7 @@
   },
   {
     "id": "parking-system",
-    "title": " Parking Management System",
+    "title": "Parking Management System",
     "subtitle": "Low-Level Design Implementation",
     "description": "A clean object-oriented implementation of a parking lot system.",
     "tech": [

@@ -9,6 +9,8 @@ const Footer = () => {
                 color: 'var(--text-secondary)',
                 fontFamily: 'var(--font-mono)',
                 fontSize: '0.8rem',
+                background: 'var(--bg-secondary)',
+                borderTop: '1px solid var(--glass-border)',
             }}
         >
             <div style={{ marginBottom: '1rem', display: 'flex', justifyContent: 'center', gap: '1.5rem' }}>
@@ -20,7 +22,7 @@ const Footer = () => {
                 </a>
             </div>
             <p>
-                Designed & Built by {profileData.name}
+                Designed & Built by {profileData.name} © {new Date().getFullYear()}
             </p>
         </footer>
     );
