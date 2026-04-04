@@ -1,9 +1,18 @@
 [
   {
+    "id": "purpleblock",
+    "role": "Software Development Engineer Intern",
+    "company": "PurpleBlock.ai",
+    "period": "Mar 2026 – Present",
+    "highlights": [
+      "Developed a real-time MCP server enabling AI agents to automate KYC/KYB verification (PAN, GST, Udyam, MCA) during partner onboarding, eliminating manual document checks across 5 external API integrations."
+    ]
+  },
+  {
     "id": "mutaengine",
     "role": "Software Development Engineer Intern",
     "company": "Mutaengine",
-    "period": "Oct 2024 – Mar 2025",
+    "period": "Oct 2025 – Mar 2026",
     "highlights": [
       "Architected low-level payment integration with per-transaction retry mechanisms and failure-handling paths, achieving 99.8% transaction success rate during transient network errors.",
       "Integrated external payment APIs with automated invoice generation for each completed transaction, eliminating manual post-payment reconciliation steps.",
