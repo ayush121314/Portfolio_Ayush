@@ -1,50 +1,54 @@
 {
-    "categories": [
-        {
-            "name": "Core & Languages",
-            "icon": "💻",
-            "skills": [
-                "C++",
-                "JavaScript",
-                "Python",
-                "Algorithms",
-                "OOP",
-                "CS Fundamentals"
-            ]
-        },
-        {
-            "name": "Backend Engineering",
-            "icon": "⚙️",
-            "skills": [
-                "Node.js",
-                "Express.js",
-                "REST APIs",
-                "MCP Protocol",
-                "System Design"
-            ]
-        },
-        {
-            "name": "Frontend & UI",
-            "icon": "🎨",
-            "skills": [
-                "React.js",
-                "Bubble.io",
-                "Tailwind CSS",
-                "HTML5/CSS3",
-                "Responsive Design"
-            ]
-        },
-        {
-            "name": "Infrastructure & Tools",
-            "icon": "☁️",
-            "skills": [
-                "AWS (EC2, S3, Lambda)",
-                "Docker",
-                "MongoDB",
-                "MySQL",
-                "Redis",
-                "Git"
-            ]
-        }
-    ]
+  "categories": [
+    {
+      "name": "Languages & Core CS",
+      "icon": "💻",
+      "skills": [
+        "C++",
+        "JavaScript",
+        "Java",
+        "Data Structures & Algorithms",
+        "OOP",
+        "OS",
+        "DBMS",
+        "Computer Networks"
+      ]
+    },
+    {
+      "name": "Backend Engineering",
+      "icon": "⚙️",
+      "skills": [
+        "Node.js",
+        "Express.js",
+        "Django",
+        "Django REST Framework (DRF)",
+        "REST APIs",
+        "Redis",
+        "System Design",
+        "MCP Integration"
+      ]
+    },
+    {
+      "name": "Frontend",
+      "icon": "🎨",
+      "skills": [
+        "React.js",
+        "Tailwind CSS",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "icon": "☁️",
+      "skills": [
+        "AWS (EC2, S3, Lambda)",
+        "Docker",
+        "MongoDB",
+        "MySQL",
+        "Git",
+        "Linux"
+      ]
+    }
+  ]
 }
